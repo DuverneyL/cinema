@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//esta declaracion genera multimples rutas: index, create, store, show, edit, update y destroy
+Route::resource('movie', 'MovieController');
